@@ -1,4 +1,4 @@
-name = "mongodb-shell"
+name = "docs-mongodb-shell"
 title = "MongoDB Shell"
 
 intersphinx = ["https://docs.mongodb.com/manual/objects.inv"]
