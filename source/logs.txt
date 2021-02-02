@@ -1,8 +1,8 @@
 .. _mdb-shell-logs:
 
-===========================
-Retrieve MongoDB Shell Logs
-===========================
+===================
+Retrieve Shell Logs
+===================
 
 .. default-domain:: mongodb
 
@@ -19,7 +19,7 @@ Retrieve MongoDB Shell Logs
 <https://github.com/pinojs/pino>`__. 
 
 You can view or tail the logs for a |mdb-shell| session based on its
-session ID.
+log ID.
 
 .. include:: /includes/admonitions/note-redact-credentials-command-history.rst
 
