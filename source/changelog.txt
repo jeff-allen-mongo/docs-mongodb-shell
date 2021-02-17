@@ -19,7 +19,7 @@ v0.8.0
 
 New features in this release:
 
-- Support for :ref:`client-side field level encryption <fle-methods-mongosh>`.
+- Support for :ref:`client-side field level encryption<fle-methods-mongosh>`.
 
 Bug fixes in this release:
 
