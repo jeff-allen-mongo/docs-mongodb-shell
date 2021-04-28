@@ -1,0 +1,66 @@
+.. _mongosh-shell-settings:
+
+=====================
+Configur3 ``mongosh``
+=====================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+
+Description
+-----------
+
+The ``config`` command provides methods to examine and update the
+:mongosh:`mongosh </>` configuration. Updates made using ``config``
+persist between sessions.
+
+.. note:: 
+
+   The ``config`` command can be used with the ``mongosh`` command line
+   interface. It has no effect in the
+   :compass:`embedded Compass shell </embedded-shell>`. 
+
+Supported ``key`` parameters:
+
+.. list-table::
+   :header-rows: 1
+
+   * - ``batchSize`` 
+
+     – The number of items displayed per cursor iteration
+
+   * - ``enableTelemetry`` 
+
+     – Whether telemetry data is enabled (this is also modifiable through
+
+   * - ``inspectDepth``
+
+     – The depth up to which objects are printed (this can be set to Infinity 
+     
+   * - ``historyLength``
+   
+     – The number of items to store in the REPL’s history file.
+
+AAA
+
+.. list-table::
+   :header-rows: 1
+
+   * - First
+     - Second
+
+   * - ``aa`` 
+
+     – aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa aaa 
+
+   * - ``bb`` 
+     – bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb bbb
+
+
+
+
+

@@ -1,0 +1,77 @@
+.. _mongosh-shell-settings:
+
+=====================
+Configure ``mongosh``
+=====================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+
+Description
+-----------
+
+The ``config`` command provides methods to examine and update the
+:mongosh:`mongosh </>` configuration. Updates made using ``config``
+persist between sessions.
+
+.. note:: 
+
+   The config`` command can be used with the ``mongosh`` command line
+   interface. It has no effect in the
+   :compass:`embedded Compass shell </embedded-shell>`. 
+
+Parameters
+----------
+
+.. list-table::
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Value
+     - Description
+
+   * - ``config``
+     – Prints the current values of all shell configuration settings
+
+   * - ``config.get(key)``
+     – Returns the current value of a shell configuration setting
+
+   * - ``config.set(key, value)``
+     – Changes the current value of a shell configuration setting
+
+Initially supported settings are:
+
+.. list-table::
+   :header-rows: 1
+
+   * - {{batchSize}} 
+     – The number of items displayed per cursor iteration
+   * - {{enableTelemetry}} 
+     – Whether telemetry data is enabled (this is also modifiable through {{enableTelemetry()}} and {{disableTelemetry()}} calls)
+   * - {{inspectDepth}} 
+     – The depth up to which objects are printed (this can be set to Infinity in order to print all objects to their full depth)
+   * - {{historyLength}} 
+     – The number of items to store in the REPL’s history file.
+
+
+
+Examples
+--------
+
+Update number of items returned
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. code-block:: javascript
+
+   {{ config.set('batchSize', 100) }}
+   
+can be used to make the shell print 100 items returned from {{db.coll.find()}} in one chunk.
+
+
+
+
