@@ -27,6 +27,8 @@ persist between sessions.
 Parameters
 ----------
 
+Hello
+
 .. list-table::
    :widths: 30 70
    :header-rows: 1
@@ -55,7 +57,7 @@ Initially supported settings are:
    * - {{inspectDepth}} 
      – The depth up to which objects are printed (this can be set to Infinity in order to print all objects to their full depth)
    * - {{historyLength}} 
-     – The number of items to store in the REPL’s history file.
+     – The number of items to store in the REPL's history file.
 
 
 

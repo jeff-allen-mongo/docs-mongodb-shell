@@ -27,10 +27,24 @@ persist between sessions.
 Parameters
 ----------
 
+Hello
+
+.. list-table::
+   :header-rows: 1
+   :widths: 1 2
+
+   * - Operating System
+     - Path to History File
+
+   * - macOS and Linux
+     - ``~/.mongodb/mongosh/.mongosh_repl_history``
+
+   * - Windows
+     - ``%UserProfile%/.mongodb/mongosh/.mongosh_repl_history``
+
 .. list-table::
    :widths: 30 70
-   :header-rows: 1
-
+  
    * - Value
      - Description
 
