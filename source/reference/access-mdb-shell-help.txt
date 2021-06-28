@@ -1,7 +1,7 @@
 .. _mdb-shell-help:
 
 ==========================
-Access Help in ``mongosh``
+Access Help in **mongosh**
 ==========================
 
 .. default-domain:: mongodb
@@ -12,13 +12,13 @@ Access Help in ``mongosh``
    :depth: 1
    :class: singlecol
 
-``mongosh`` provides additional help information in its help system.
+**mongosh** provides additional help information in its help system.
 This document provides an overview of accessing this help
 information.
 
 .. tip::
 
-   When accessing help in ``mongosh``, you can use the ``.help()`` and
+   When accessing help in **mongosh**, you can use the ``.help()`` and
    ``.help`` syntaxes interchangeably.
 
 .. _mdb-shell-help-command-line:
@@ -26,7 +26,7 @@ information.
 Command Line Help
 -----------------
 
-To see the list of options and help for starting ``mongosh``, use the
+To see the list of options and help for starting **mongosh**, use the
 ``--help`` option from the command line:
 
 .. code-block:: sh
@@ -36,7 +36,7 @@ To see the list of options and help for starting ``mongosh``, use the
 Shell Help
 ----------
 
-To see a basic list of commands you can run, in ``mongosh``, type
+To see a basic list of commands you can run, in **mongosh**, type
 ``help``:
 
 .. code-block:: javascript
@@ -98,7 +98,7 @@ Show List of Database Methods
                                the associated data files.
 
 Show Help for Specific Database Method
-  To see help for a specific database method in ``mongosh``, type the
+  To see help for a specific database method in **mongosh**, type the
   ``db.<method name>``, followed by ``.help`` or ``.help()``. The
   following example returns help for the :method:`db.adminCommand()`
   method:
@@ -119,7 +119,7 @@ Show Help for Specific Database Method
        For more information on usage: https://docs.mongodb.com/manual/reference/method/db.adminCommand
 
 Show Additional Usage Details for a Database Method
-  To see additional usage details for a database method in ``mongosh``,
+  To see additional usage details for a database method in **mongosh**,
   type the ``db.<method name>`` without the parenthesis (``()``). The
   following example returns details about the
   :method:`db.adminCommand()` method:
@@ -198,7 +198,7 @@ Show List of Collection Methods
        ...
 
 Show Help for Specific Collection Method
-  To see help for a specific collection method in ``mongosh``, type the
+  To see help for a specific collection method in **mongosh**, type the
   ``db.<collection>.<method name>``, followed by ``.help`` or
   ``.help()``. The following example returns help for the
   :method:`db.collection.insertOne()` method:
@@ -220,7 +220,7 @@ Show Help for Specific Collection Method
 
 Show Additional Usage Details for a Collection Method
   To see additional usage details for a collection method in
-  ``mongosh``, type the ``db.<collection>.<method>`` name without the
+  **mongosh**, type the ``db.<collection>.<method>`` name without the
   parenthesis (``()``). The following example returns
   details about the :method:`~db.collection.insertOne()` method:
 
@@ -243,12 +243,12 @@ Show Additional Usage Details for a Collection Method
      }
 
 .. didn't include the cursor details from the manual help page as
-   it seems as if most of it doesn't apply for ``mongosh``
+   it seems as if most of it doesn't apply for **mongosh**
 
 BSON Class Help
 ---------------
 
-``mongosh`` provides help methods for :term:`BSON <BSON>` classes. The
+**mongosh** provides help methods for :term:`BSON <BSON>` classes. The
 help methods provide a brief overview of the BSON class and a link with
 more information.
 
@@ -272,7 +272,7 @@ the following commands:
 
    ObjectId().help()
 
-``mongosh`` returns the same output for both ``.help()`` methods:
+**mongosh** returns the same output for both ``.help()`` methods:
 
 .. code-block:: javascript
    :copyable: false
@@ -281,7 +281,7 @@ the following commands:
 
    For more information on usage: https://mongodb.github.io/node-mongodb-native/3.6/api/ObjectID.html
 
-``mongosh`` provides help methods for the following BSON classes:
+**mongosh** provides help methods for the following BSON classes:
 
 - ``BinData``
 - ``Code``
@@ -298,7 +298,7 @@ the following commands:
 Command Helpers
 ---------------
 
-``mongosh`` provides the following methods and commands to wrap
+**mongosh** provides the following methods and commands to wrap
 certain database commands and obtain information on your deployment:
 
 .. list-table::
@@ -331,7 +331,7 @@ certain database commands and obtain information on your deployment:
 
    * - ``use <db>``
 
-     - Switch current database to ``<db>``. The ``mongosh`` variable
+     - Switch current database to ``<db>``. The **mongosh** variable
        ``db`` is set to the current database.
 
    * - ``show collections``

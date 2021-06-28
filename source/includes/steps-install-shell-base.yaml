@@ -7,7 +7,7 @@ content: |
   Open the `MongoDB Download Center
   <https://www.mongodb.com/try/download/shell?jmp=docs>`__.
 ---
-title: "Download the ``mongosh`` installation archive for your
+title: "Download the **mongosh** installation archive for your
   operating system."
 ref: download-archive
 level: 4 
@@ -18,13 +18,13 @@ level: 4
 content: |
 
    Run the following command from the directory containing the
-   ``mongosh`` ``.tgz`` package:
+   **mongosh** ``.tgz`` package:
    
    .. code-block:: sh
 
       tar -zxvf mongosh-{+version+}-linux.tgz
 
-   The extracted ``bin`` folder contains two binaries: ``mongosh`` and
+   The extracted ``bin`` folder contains two binaries: **mongosh** and
    ``mongocryptd-mongosh``.
 
    If your web browser automatically extracts the archive as part of the
@@ -45,7 +45,7 @@ content: |
 
    You can either:
 
-   - Copy the ``mongosh`` binary into a directory listed in your
+   - Copy the **mongosh** binary into a directory listed in your
      ``PATH`` variable, such as ``/usr/local/bin``. Run the following
      commands from the directory where you extracted the download file:
 
@@ -54,7 +54,7 @@ content: |
        sudo cp mongosh /usr/local/bin/
        sudo cp mongocryptd-mongosh /usr/local/bin/
 
-   - Create a symbolic link to the ``mongosh`` binary from a directory
+   - Create a symbolic link to the **mongosh** binary from a directory
      listed in your ``PATH`` variable, such as ``/usr/local/bin``. Run
      the following commands from the directory where you extracted the
      download file:

@@ -10,13 +10,13 @@ Compatibility Changes with Legacy ``mongo`` Shell
    :depth: 1
    :class: singlecol
 
-The following behaviors in ``mongosh`` affect compatibility with
+The following behaviors in **mongosh** affect compatibility with
 operations performed in the legacy ``mongo`` shell.
 
 Deprecated Methods
 ------------------
 
-The following shell methods are deprecated in ``mongosh``. Instead, use
+The following shell methods are deprecated in **mongosh**. Instead, use
 the methods listed in the :guilabel:`Alternative Resources` column.
 
 .. list-table::
@@ -75,7 +75,7 @@ Read Preference Behavior
 Read Operations on a Secondary Node
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When using ``mongosh`` to connect directly to a :term:`secondary`
+When using **mongosh** to connect directly to a :term:`secondary`
 replica set member, you do not have to explicitly enable secondary
 reads with ``rs.secondaryOk()``.
 
@@ -115,18 +115,18 @@ Numeric Values
 --------------
 
 The legacy ``mongo`` shell stored numerical values as ``doubles`` by
-default. In ``mongosh`` numbers are stored as 32 bit ``int`` types when
+default. In **mongosh** numbers are stored as 32 bit ``int`` types when
 possible or else as ``double``. 
 
 The preferred types for numeric variables are different in MongoDB 
 Shell than the types suggested in the legacy ``mongo`` shell. The types
-in ``mongosh`` better align with the types used by the MongoDB Drivers.
+in **mongosh** better align with the types used by the MongoDB Drivers.
 
 .. list-table::
    :header-rows: 1
 
    * - ``mongo`` type
-     - ``mongosh`` type
+     - **mongosh** type
 
    * - ``NumberInt``
      - ``Int32``
@@ -140,12 +140,12 @@ in ``mongosh`` better align with the types used by the MongoDB Drivers.
 .. warning::
 
    Data types may be stored inconsistently if you connect to the same
-   collection using both ``mongosh`` and the legacy ``mongo`` shell. 
+   collection using both **mongosh** and the legacy ``mongo`` shell. 
 
 Consider the ``typeExample`` collection. This collection consists of
 two identical documents, ``{ "a": 1 }``. The first document was created
 in the legacy ``mongo`` shell, the second document was created in
-``mongosh``. 
+**mongosh**. 
 
 We can use the :expression:`$type` operator in an aggregation pipeline
 to see the type that was assigned in each shell. 
@@ -168,7 +168,7 @@ to see the type that was assigned in each shell.
    )
 
 In the first document, created in the legacy ``mongo`` shell, the value
-was stored as a ``double``. In the ``mongosh`` document the value was
+was stored as a ``double``. In the **mongosh** document the value was
 stored as type ``int``.
 
 .. code-block:: javascript

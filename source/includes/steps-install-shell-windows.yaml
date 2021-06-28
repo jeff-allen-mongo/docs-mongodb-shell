@@ -13,7 +13,7 @@ title: "Extract the files from the downloaded archive."
 ref: extract-archive
 level: 4
 ---
-title: "Add the ``mongosh`` binary to your ``PATH`` environment
+title: "Add the **mongosh** binary to your ``PATH`` environment
    variable."
 ref: add-shell-to-path
 level: 4
@@ -40,14 +40,14 @@ content: |
       :guilabel:`Edit`. The **Edit environment variable** modal 
       displays.
 
-   #. Click :guilabel:`New` and add the filepath to your ``mongosh`` 
+   #. Click :guilabel:`New` and add the filepath to your **mongosh** 
       binary.
 
    #. Click :guilabel:`OK` to confirm your changes. On each other 
       modal, click :guilabel:`OK` to confirm your changes.
 
    To confirm that your ``PATH`` environment variable is correctly 
-   configured to find ``mongosh``, open a command prompt and enter the 
+   configured to find **mongosh**, open a command prompt and enter the 
    ``mongosh --help`` command. If your ``PATH`` is configured 
    correctly, a list of valid commands displays.
 

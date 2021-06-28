@@ -1,7 +1,7 @@
 .. _mongosh-shell-settings:
 
 =====================
-Configure ``mongosh``
+Configure **mongosh**
 =====================
 
 .. default-domain:: mongodb
@@ -17,14 +17,14 @@ persist between sessions.
 
 .. note::
 
-   The ``config`` API can be used within the ``mongosh`` command line
+   The ``config`` API can be used within the **mongosh** command line
    interface. It has no effect in the
    :compass:`embedded Compass shell </embedded-shell>`.
 
 Syntax
 ------
 
-Print the current ``mongosh`` configuration:
+Print the current **mongosh** configuration:
 
 .. code-block:: javascript
 
@@ -68,16 +68,16 @@ Supported ``property`` parameters
    * - ``historyLength``
      - integer
      - 1000
-     - The number of items to store in ``mongosh`` REPL's history file.
+     - The number of items to store in **mongosh** REPL's history file.
 
    * - ``inspectCompact``
      - integer or boolean
      - 3
-     - The level of inner elements that ``mongosh`` outputs on a single
+     - The level of inner elements that **mongosh** outputs on a single
        line. Short array elements are also grouped together on a single
        line.
        
-       If set to ``false``, ``mongosh`` outputs each field
+       If set to ``false``, **mongosh** outputs each field
        on its own line.
 
    * - ``inspectDepth``
@@ -144,12 +144,12 @@ The output differs like this:
        at Socket.emit (events.js:315:20)
        at Socket.EventEmitter.emit (domain.js:548:15)
 
-Call ``config`` API from outside the ``mongosh``
+Call ``config`` API from outside the **mongosh**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can call the ``config`` API from the command line using
-:option:`--eval` with ``mongosh``. In this case the
-:option:`--nodb` option means ``mongosh`` will update without
+:option:`--eval` with **mongosh**. In this case the
+:option:`--nodb` option means **mongosh** will update without
 connecting to a MongoDB database.
 
 .. important::
@@ -162,7 +162,7 @@ connecting to a MongoDB database.
 
    mongosh --nodb --eval 'config.set("enableTelemetry", true)' 
 
-``mongosh`` returns additional information along with the result of the
+**mongosh** returns additional information along with the result of the
 API call. 
 
 .. code-block::

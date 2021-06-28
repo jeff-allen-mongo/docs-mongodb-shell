@@ -1,10 +1,10 @@
 ---
-title: "Launch the ``mongosh`` Shell."
+title: "Launch the **mongosh** Shell."
 ref: launch-mongosh-shell
 level: 4
 content: |
 
-  Create a ``mongosh`` session without connecting to a running database
+  Create a **mongosh** session without connecting to a running database
   by using the :option:`--nodb` option:
 
   .. code-block:: javascript
@@ -22,7 +22,7 @@ content: |
   The AWS Access Key must correspond to an IAM user with all *List* and
   *Read* permissions for the KMS service.
   
-  In ``mongosh``, create a new
+  In **mongosh**, create a new
   :ref:`ClientSideFieldLevelEncryptionOptions` variable for storing the
   client-side field level encryption configuration, which contains these
   credentials:
@@ -48,7 +48,7 @@ ref: connect-with-encryption
 level: 4
 content: |
 
-  In ``mongosh``, use the :method:`Mongo()<Mongo()>` constructor to
+  In **mongosh**, use the :method:`Mongo()<Mongo()>` constructor to
   establish a database connection to the target cluster. Specify the
   :ref:`ClientSideFieldLevelEncryptionOptions` document as the second
   parameter to the :method:`Mongo()<Mongo()>` constructor to configure

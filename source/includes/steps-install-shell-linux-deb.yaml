@@ -87,13 +87,13 @@ content: |
 
      sudo apt-get update
 ---
-title: Install the ``mongosh`` package.
+title: Install the **mongosh** package.
 stepnum: 4
 level: 4
 ref: install
 content: |
 
-  To install the latest stable version of ``mongosh``, issue the
+  To install the latest stable version of **mongosh**, issue the
   following command:
 
   .. code-block:: sh

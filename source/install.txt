@@ -1,7 +1,7 @@
 .. _mdb-shell-install:
 
 ===================
-Install ``mongosh``
+Install **mongosh**
 ===================
 
 .. default-domain:: mongodb
@@ -36,7 +36,7 @@ Procedure
 
       .. note::
 
-         On Windows, ``mongosh`` preferences and configuration options
+         On Windows, **mongosh** preferences and configuration options
          are stored in the ``%APPDATA%/mongodb/mongosh`` directory.
 
       Install from MSI
@@ -64,21 +64,21 @@ Procedure
          `Homebrew Website <https://docs.brew.sh/Installation>`__.
 
       The Homebrew package manager is the recommended installation
-      method for ``mongosh`` on macOS. To learn how to manually install
-      ``mongosh`` from an archive instead, see
+      method for **mongosh** on macOS. To learn how to manually install
+      **mongosh** from an archive instead, see
       :ref:`macos-install-archive`.
 
       Considerations
       ``````````````
 
-      ``mongosh`` installed with Homebrew does not support
+      **mongosh** installed with Homebrew does not support
       :manual:`automatic client-side field level encryption
       </core/security-automatic-client-side-encryption/>`.
 
       Procedure
       `````````
 
-      To install ``mongosh`` with Homebrew:
+      To install **mongosh** with Homebrew:
 
       .. include:: /includes/steps/install-shell-macos-homebrew.rst
 
@@ -87,7 +87,7 @@ Procedure
       Install from ``.zip`` File
       ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      To manually install ``mongosh`` using a downloaded ``.zip``
+      To manually install **mongosh** using a downloaded ``.zip``
       file:
 
       .. include:: /includes/steps/install-shell-macos.rst
@@ -98,7 +98,7 @@ Procedure
       Considerations for Ubuntu
       ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      - ``mongosh`` is available as a
+      - **mongosh** is available as a
         :abbr:`PPA (Personal Package Archive)` for Ubuntu 20.04 (Focal)
         and Ubuntu 18.04 (Bionic).
         
@@ -106,7 +106,7 @@ Procedure
           (Bionic), use the procedure in the ``.deb`` tab.
         
         - If you are using Ubuntu 16.04 (Xenial), you must
-          obtain the ``mongosh`` tarball using the procedure in the
+          obtain the **mongosh** tarball using the procedure in the
           ``.tgz`` tab.
       
       - The ``mongocryptd`` binary in the |mdb-shell| ``.deb`` 
@@ -151,5 +151,5 @@ Procedure
 Next Steps
 ----------
 
-Once you successfully install ``mongosh``, learn how to
+Once you successfully install **mongosh**, learn how to
 :ref:`connect to your MongoDB deployment <mdb-shell-connect>`.

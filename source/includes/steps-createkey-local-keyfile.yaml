@@ -1,10 +1,10 @@
 ---
-title: "Launch the ``mongosh`` Shell."
+title: "Launch the **mongosh** Shell."
 ref: launch-mongosh-shell
 level: 4
 content: |
 
-  Create a ``mongosh`` session without connecting to a running database
+  Create a **mongosh** session without connecting to a running database
   by using the :option:`--nodb` option:
 
   .. code-block:: javascript
@@ -19,7 +19,7 @@ content: |
 
   To configure client-side field level encryption for a locally managed
   key, you must specify a base64-encoded 96-byte string with no line
-  breaks. Run the following command in ``mongosh`` to generate a key
+  breaks. Run the following command in **mongosh** to generate a key
   matching these requirements:
 
   .. code-block:: javascript
@@ -34,7 +34,7 @@ ref: create-encryption-configuration
 level: 4
 content: |
 
-  In ``mongosh``, create a new
+  In **mongosh**, create a new
   :ref:`ClientSideFieldLevelEncryptionOptions` variable for storing the
   client-side field level encryption configuration, replacing
   ``MY_LOCAL_KEY`` with the key generated in step 1:
@@ -56,7 +56,7 @@ ref: connect-with-encryption
 level: 4
 content: |
 
-  In ``mongosh``, use the :method:`Mongo()<Mongo()>` constructor to
+  In **mongosh**, use the :method:`Mongo()<Mongo()>` constructor to
   establish a database connection to the target cluster. Specify the
   :ref:`ClientSideFieldLevelEncryptionOptions` document as the second
   parameter to the :method:`Mongo()<Mongo()>` constructor to configure

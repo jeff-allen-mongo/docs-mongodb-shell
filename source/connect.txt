@@ -16,13 +16,13 @@ Connect to a Deployment
 .. important::
 
    Ensure that you have a running MongoDB deployment before attempting 
-   to connect with ``mongosh``. The connection method you use 
+   to connect with **mongosh**. The connection method you use 
    depends on your deployment type.
 
 Local MongoDB Instance on Default Port
 --------------------------------------
 
-Run ``mongosh`` without any command-line options
+Run **mongosh** without any command-line options
 to connect to a MongoDB instance running on your **localhost** with 
 **default port** 27017:
 
@@ -86,7 +86,7 @@ To specify a remote host and port, you can use:
      :atlas:`Connect to a Cluster </connect-to-cluster/#use-the-connect-dialog-to-connect-to-your-cluster>`.
 
 - The command-line options ``--host`` and ``--port``. If you do not 
-  include the ``--port`` option, ``mongosh`` uses the **default port** 
+  include the ``--port`` option, **mongosh** uses the **default port** 
   27017.
 
   .. example:: 
@@ -106,7 +106,7 @@ Connect with Authentication
 
 To connect to a MongoDB instance requires authentication, use the 
 ``--username`` and ``--authenticationDatabase`` command-line options. 
-``mongosh`` prompts you for a password, which it masks as you type.
+**mongosh** prompts you for a password, which it masks as you type.
   
 .. example:: 
 
@@ -164,7 +164,7 @@ To connect to a replica set:
 
 .. note::
 
-   ``mongosh`` adds the ``directConnection=true`` query parameter to the
+   **mongosh** adds the ``directConnection=true`` query parameter to the
    connection string automatically unless at least one of the following is
    true:
 
@@ -253,7 +253,7 @@ your current connection.
 Disconnect from a Deployment
 ----------------------------
 
-To disconnect from a deployment and exit ``mongosh``, you can:
+To disconnect from a deployment and exit **mongosh**, you can:
 
 - Type ``.exit``, ``exit``, or ``exit()``.
 
@@ -266,5 +266,5 @@ To disconnect from a deployment and exit ``mongosh``, you can:
 Limitations
 -----------
 
-``mongosh`` currently does not support
+**mongosh** currently does not support
 :manual:`Kerberos authentication </core/kerberos/>`.

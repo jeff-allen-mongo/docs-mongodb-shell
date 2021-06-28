@@ -1,7 +1,7 @@
 .. _mdb-shell-write-scripts:
 
 =============================
-Write Scripts for ``mongosh``
+Write Scripts for **mongosh**
 =============================
 
 .. default-domain:: mongodb

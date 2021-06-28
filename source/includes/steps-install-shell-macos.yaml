@@ -15,13 +15,13 @@ level: 4
 content: |
 
    Run the following command from the directory containing the
-   ``mongosh`` ``.zip`` archive:
+   **mongosh** ``.zip`` archive:
    
    .. code-block:: sh
 
       unzip mongosh-{+version+}-darwin-x64.zip
 
-   The extracted ``bin`` folder contains two binaries: ``mongosh`` and
+   The extracted ``bin`` folder contains two binaries: **mongosh** and
    ``mongocryptd-mongosh``.
 
    If your web browser automatically extracts the archive as part of the
@@ -39,12 +39,12 @@ source:
   ref: add-shell-to-path
 ref: add-shell-to-path-macos
 ---
-title: "Allow macOS to run ``mongosh``."
+title: "Allow macOS to run **mongosh**."
 ref: remove-quarantine-macos
 level: 4
 content: |
-   macOS may prevent ``mongosh`` from running after installation. If
-   you receive a security error when starting ``mongosh`` indicating
+   macOS may prevent **mongosh** from running after installation. If
+   you receive a security error when starting **mongosh** indicating
    that the developer could not be identified or verified, perform
    the following actions:
 
@@ -53,6 +53,6 @@ content: |
    #. Select the *Security and Privacy* pane.
 
    #. Under the *General* tab, click the button to the right of the
-      message about ``mongosh``, labelled either :guilabel:`Open Anyway`
+      message about **mongosh**, labelled either :guilabel:`Open Anyway`
       or :guilabel:`Allow Anyway` depending on your version of macOS.
 ...

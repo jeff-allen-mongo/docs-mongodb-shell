@@ -1,5 +1,5 @@
 ===================
-``mongosh`` Options
+**mongosh** Options
 ===================
 
 .. default-domain:: mongodb

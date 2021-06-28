@@ -1,5 +1,5 @@
 =========================
-Data Types in ``mongosh``
+Data Types in **mongosh**
 =========================
 
 .. default-domain:: mongodb
@@ -12,7 +12,7 @@ Data Types in ``mongosh``
 
 MongoDB :term:`BSON` provides support for additional data types than
 :term:`JSON`. :ecosystem:`Drivers </drivers>` provide native support for
-these data types in host languages and ``mongosh`` also provides several
+these data types in host languages and **mongosh** also provides several
 helper classes to support the use of these data types. See the
 :manual:`Extended JSON </reference/mongodb-extended-json>` reference for
 additional information.
@@ -27,7 +27,7 @@ Types
 Date
 ~~~~
 
-``mongosh`` provides various methods to return the date, either as a
+**mongosh** provides various methods to return the date, either as a
 string or as a ``Date`` object:
 
 - ``Date()`` method which returns the current date as a string.
@@ -72,7 +72,7 @@ The operation returns ``string``.
 Return ``Date``
 ```````````````
 
-``mongosh`` wraps objects of ``Date`` type with the
+**mongosh** wraps objects of ``Date`` type with the
 ``ISODate`` helper; however, the objects remain of type ``Date``.
 
 The following example uses both the ``new Date()`` constructor and the
@@ -113,9 +113,9 @@ The operation returns ``true`` for both.
 ObjectId
 ~~~~~~~~
 
-``mongosh`` provides the ``ObjectId()`` wrapper class around the
+**mongosh** provides the ``ObjectId()`` wrapper class around the
 :ref:`objectid` data type. To generate a new ObjectId, use the following
-operation in ``mongosh``:
+operation in **mongosh**:
 
 .. code-block:: javascript
 
@@ -130,8 +130,8 @@ operation in ``mongosh``:
 NumberLong
 ~~~~~~~~~~
 
-If a number can be converted to a 32-bit ``int``, ``mongosh`` will
-store it in that form. If not, ``mongosh`` defaults to storing the
+If a number can be converted to a 32-bit ``int``, **mongosh** will
+store it in that form. If not, **mongosh** defaults to storing the
 number as a ``double``. The ``NumberLong()`` wrapper can convert the
 type to a 64-bit integer.
 
@@ -170,7 +170,7 @@ contains a ``NumberLong`` object by a **float**, the data type changes
 to a floating point value, as in the following example:
 
 #. Use :update:`$inc` to increment the ``calc`` field by ``5``, which
-   ``mongosh`` treats as a float:
+   **mongosh** treats as a float:
 
    .. code-block:: javascript
 
@@ -193,7 +193,7 @@ to a floating point value, as in the following example:
 .. note::
 
    In the legacy :binary:`~bin.mongo` shell, ``NumberLong`` can accept
-   either a string or integer value. In ``mongosh``, ``NumberLong`` can
+   either a string or integer value. In **mongosh**, ``NumberLong`` can
    only accept a string value.
 
 .. _shell-type-int:
@@ -201,8 +201,8 @@ to a floating point value, as in the following example:
 NumberInt
 ~~~~~~~~~
 
-If a number can be converted to a 32-bit ``int``, ``mongosh`` will
-store it in that form. If not, ``mongosh`` defaults to storing the
+If a number can be converted to a 32-bit ``int``, **mongosh** will
+store it in that form. If not, **mongosh** defaults to storing the
 number as a ``double``. The ``NumberInt()`` constructor can be used to
 explicitly specify 32-bit integers.
 
@@ -211,8 +211,8 @@ explicitly specify 32-bit integers.
 NumberDecimal
 ~~~~~~~~~~~~~
 
-If a number can be converted to a 32-bit ``int``, ``mongosh`` will
-store it in that form. If not, ``mongosh`` defaults to storing the
+If a number can be converted to a 32-bit ``int``, **mongosh** will
+store it in that form. If not, **mongosh** defaults to storing the
 number as a ``double``. The ``NumberDecimal()`` constructor can be
 used to explicitly specify 128-bit decimal-based floating-point values
 that are capable of emulating decimal rounding with exact precision. 
@@ -242,7 +242,7 @@ The value is stored in the database as follows:
 .. note::
 
    In the legacy :binary:`~bin.mongo` shell, ``NumberLong`` can accept
-   either a string or double value. In ``mongosh``, ``NumberLong`` can
+   either a string or double value. In **mongosh**, ``NumberLong`` can
    only accept a string value.
 
 .. note:: To use the ``decimal`` data type with a
@@ -324,10 +324,10 @@ string alias ``"decimal"`` or ``19``, the numeric code for the
 
 .. _check-types-in-shell:
       
-Check Types in the MongoDB Shell, ``mongosh``
+Check Types in the MongoDB Shell, **mongosh**
 ---------------------------------------------
 
-To determine the type of fields, ``mongosh`` provides the ``instanceof``
+To determine the type of fields, **mongosh** provides the ``instanceof``
 and ``typeof`` operators.
 
 

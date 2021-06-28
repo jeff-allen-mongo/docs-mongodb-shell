@@ -5,7 +5,7 @@ ref: config-yum
 content: |
 
   Create a ``/etc/yum.repos.d/mongodb-org-{+mdb-version+}.repo`` file so that
-  you can install ``mongosh`` directly using ``yum``:
+  you can install **mongosh** directly using ``yum``:
 
   .. code-block:: sh
 
@@ -31,13 +31,13 @@ replacement:
   distro_name_full: "Red Hat / CentOS"
   distro_num: "7"
 ---
-title: Install ``mongosh``.
+title: Install **mongosh**.
 stepnum: 2
 level: 4
 ref: install
 content: |
 
-  To install the latest stable version of ``mongosh``, issue the following
+  To install the latest stable version of **mongosh**, issue the following
   command:
 
   .. code-block:: sh

@@ -1,7 +1,7 @@
 .. _mdb-shell-methods:
 
 ===================
-``mongosh`` Methods
+**mongosh** Methods
 ===================
 
 .. default-domain:: mongodb
@@ -748,7 +748,7 @@ Client-Side Field Level Encryption Methods
 
 .. note:: Limitations
 
-   - Automatic encryption is only available when ``mongosh`` is connected
+   - Automatic encryption is only available when **mongosh** is connected
      to an Atlas cluster or a MongoDB Enterprise Server. For details,
      see :manual:`Automatic Client-Side Field Level Encryption
      </core/security-automatic-client-side-encryption/>`. The methods
@@ -756,9 +756,9 @@ Client-Side Field Level Encryption Methods
      supported on non-enterprise servers.
 
    - Automatic encryption is not available with the Homebrew installation
-     of ``mongosh``.
+     of **mongosh**.
 
-   - Field level encryption is only available in the ``mongosh`` binary,
+   - Field level encryption is only available in the **mongosh** binary,
      and not available in the :compass:`embedded Compass shell
      </embedded-shell>`. 
 
@@ -841,7 +841,7 @@ Native Methods
 
      - Loads and runs a JavaScript file in the shell.
 
-       In ``mongosh``, scripts loaded with the ``load()`` method support
+       In **mongosh**, scripts loaded with the ``load()`` method support
        the ``__filename`` and ``__dirname`` Node.js variables. These
        variables return the file name and directory of the loaded
        script, respectively. The returned values are always absolute
@@ -870,7 +870,7 @@ Native Methods
 
    * - ``version()``
     
-     - Returns the current version of the ``mongosh`` instance.
+     - Returns the current version of the **mongosh** instance.
 
 Query Plan Cache Methods
 ------------------------
@@ -934,7 +934,7 @@ Replication Methods
 
    * - :method:`rs.freeze()`
 
-     - Makes the replica set member that ``mongosh`` is connected to 
+     - Makes the replica set member that **mongosh** is connected to 
        ineligible to become primary for the specified duration. You 
        must specify the duration in seconds.
 
@@ -948,12 +948,12 @@ Replication Methods
 
    * - :method:`db.printReplicationInfo()`
 
-     - Returns the oplog of the replica set member that ``mongosh`` is 
+     - Returns the oplog of the replica set member that **mongosh** is 
        connected to. 
        
    * - :method:`rs.printReplicationInfo()`
 
-     - Returns the oplog of the replica set member that ``mongosh`` is 
+     - Returns the oplog of the replica set member that **mongosh** is 
        connected to. 
        
    * - ``db.printSecondaryReplicationInfo``
@@ -962,7 +962,7 @@ Replication Methods
      
        This is identical to the ``rs.printSecondaryReplicationInfo()`` method. 
        This method's output is similar to the 
-       :method:`db.printSlaveReplicationInfo()` method. The :method:`db.printSlaveReplicationInfo()` method is deprecated in ``mongosh``. Use 
+       :method:`db.printSlaveReplicationInfo()` method. The :method:`db.printSlaveReplicationInfo()` method is deprecated in **mongosh**. Use 
        ``db.printSecondaryReplicationInfo()`` instead.
 
        The following is an example output from the 
@@ -990,7 +990,7 @@ Replication Methods
        This is identical to the ``db.printSecondaryReplicationInfo()`` 
        method. This method's output is similar to the 
        :method:`rs.printSlaveReplicationInfo()` method in the legacy 
-       |mongo| shell. The :method:`rs.printSlaveReplicationInfo()` method is deprecated in ``mongosh``. Use 
+       |mongo| shell. The :method:`rs.printSlaveReplicationInfo()` method is deprecated in **mongosh**. Use 
        ``rs.printSecondaryReplicationInfo()`` instead.
 
        The following is an example output from the 
@@ -1021,7 +1021,7 @@ Replication Methods
 
    * - :method:`rs.status()`
 
-     - Returns the status of the replica set member that ``mongosh`` is 
+     - Returns the status of the replica set member that **mongosh** is 
        connected to. 
 
    * - :method:`rs.stepDown()`
@@ -1032,7 +1032,7 @@ Replication Methods
    * - :method:`rs.syncFrom()`
 
      - Resets the sync target to the replica set member specified 
-       by hostname for the replica set member that ``mongosh`` is 
+       by hostname for the replica set member that **mongosh** is 
        connected to.
 
 Role Management Methods 
@@ -1356,7 +1356,7 @@ User Management Methods
 .. important::
 
    The :method:`passwordPrompt()` method is currently not
-   supported in ``mongosh``. As a result, when using the following
+   supported in **mongosh**. As a result, when using the following
    methods you must specify the password as a parameter:
 
    - :method:`db.auth()`

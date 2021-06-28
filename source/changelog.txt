@@ -1,7 +1,7 @@
 .. _mongosh-changelog:
 
 =====================
-``mongosh`` Changelog
+**mongosh** Changelog
 =====================
 
 .. default-domain:: mongodb
@@ -19,7 +19,7 @@ v0.15.1
 
 New features in this release:
 
-- ``.tar`` and ``.zip`` ``mongosh`` download archives now include a
+- ``.tar`` and ``.zip`` **mongosh** download archives now include a
   parent directory.
 
 - Autocomplete is now aware of the ``--apiStrict`` flag. When
@@ -30,7 +30,7 @@ New features in this release:
 
 Bug fixes in this release:
 
-- ``mongosh`` can now connect to a replica set containing unhealthy nodes.
+- **mongosh** can now connect to a replica set containing unhealthy nodes.
 
 v0.14.0
 -------
@@ -222,10 +222,10 @@ New features in this release:
 
 Bug fixes in this release:
 
-- ``mongosh`` no longer fails when connecting to a node in the
+- **mongosh** no longer fails when connecting to a node in the
   ``STARTUP2`` state.
 
-- ``mongosh`` now properly displays startup warnings.
+- **mongosh** now properly displays startup warnings.
 
 - :method:`~db.collection.explain()` on aggregations now return
   accurate and complete results.
@@ -250,7 +250,7 @@ Bug fixes and miscellaneous updates in this release:
 - Remove support for deprecated 3.6 CRUD methods (``insert()``,
   ``remove()``, ``save()``, and ``update()``).
 
-- Fix an issue with loading JavaScript files into ``mongosh``.
+- Fix an issue with loading JavaScript files into **mongosh**.
 
 - Fix an issue where when inserting many documents via a for loop,
   the loop would abort before all documents were inserted.
@@ -334,11 +334,11 @@ the `MongoDB Download Center
 Behavior Updates
 ~~~~~~~~~~~~~~~~
 
-Whenever a command's output includes ``{ ok: 0 }``, ``mongosh`` throws
+Whenever a command's output includes ``{ ok: 0 }``, **mongosh** throws
 an exception and does not return the raw output from the server.
 
 The legacy ``mongo`` shell error handling is not consistent between
-commands. ``mongosh`` standardizes the user-facing behavior for a
+commands. **mongosh** standardizes the user-facing behavior for a
 more consistent experience.
 
 Bug Fixes
